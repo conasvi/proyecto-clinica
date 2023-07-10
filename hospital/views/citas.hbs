@@ -1,0 +1,28 @@
+<h1>CENTRO MEDICO BACKEND</h1>
+<h2>LISTADO DE CITAS MEDICAS</h2>
+<table>
+<thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Cedula</th>
+        <th>Nombre medico</th>
+        <th>Consultorio</th>
+        <th>Fecha</th>
+        <th>Opciones</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each citas}}
+    <tr>
+        <td>{{nombres}}</td>
+        <td>{{id_paciente}}</td>
+        <td>{{nombres}} {{apellido}}</td>
+        <td>{{consultorio}}</td>
+        <td>{{formatoFecha fecha}}</td>
+        <td><a href="/citas/eliminar/{{id}}"><img src="/images/eliminar.png"></a></td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+<a class="volver" href="/">Volver</a>
+<a href="citas/agregar-cita">Nueva cita</a>

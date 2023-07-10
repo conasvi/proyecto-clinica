@@ -1,0 +1,103 @@
+html, body {
+    align-items: center;
+    background: #f2f4f8;
+    border: 0;
+    display: flex;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form {
+    --background: white;
+    --border: rgba(0, 0, 0, 0.125);
+    --borderDark: rgba(0, 0, 0, 0.25);
+    --borderDarker: rgba(0, 0, 0, 0.5);
+    --bgColorH: 0;
+    --bgColorS: 0%;
+    --bgColorL: 98%;
+    --fgColorH: 210;
+    --fgColorS: 50%;
+    --fgColorL: 38%;
+    --shadeDark: 0.3;
+    --shadeLight: 0.7;
+    --shadeNormal: 0.5;
+    --borderRadius: 0.125rem;
+    --highlight: #306090;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--borderRadius);
+    box-shadow: 0 1rem 1rem -0.75rem var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+a, input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a, input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input:required,
+select:required {
+    border-color: #ff0000;
+}
+
+input:invalid,
+select:invalid {
+    border-color: #ff0000;
+}
+
+input:valid,
+select:valid {
+    border-color: #00ff00;
+}
+
+.volver {
+    background-color: #4cacaf;
+    text-align: center;
+}
+
+.volver:hover {
+    background-color: #429396;
+}
+
+button {
+    margin-top: 10px;
+}
+img{
+    height:500px;
+    margin: 15px;
+}
